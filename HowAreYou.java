@@ -43,7 +43,8 @@ public class HowAreYou {
                 System.out.println("Error" + e);
             }
 
-        } else { // in Java, else cannot have a condition
+        }
+        if (todayinput.equals(true)) { // in Java, else cannot have a condition
             System.out.print("Thats good to hear " + input + "!");
             System.out.println(" Here is a song to celebrate!");
 
@@ -66,6 +67,9 @@ public class HowAreYou {
             } catch (Exception f) {
                 System.out.println("Error" + f);
             }
+
+        } else {
+            System.out.println("Error, enter only true or false");
 
         }
 
